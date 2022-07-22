@@ -27,7 +27,7 @@ app.post("/pets",(req,res)=>{
         species:req.body.species,
         owner:req.body.owner
     })
-    res.send("you made a post request!")
+    res.json({data:req.body,message:"success!"})
 })
 
 app.get("/pets/:petName",(req,res)=>{
