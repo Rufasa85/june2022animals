@@ -28,5 +28,11 @@
         "name": "Blu",
         "species": "Noah",
         "owner": "Cat"
+    },
+    {
+        "id": "12354",
+        "name": "Beezer",
+        "species": "cat",
+        "owner": "Vincent"
     }
 ]

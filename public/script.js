@@ -1,4 +1,4 @@
-fetch("/pets").then(res=>res.json()).then(data=>{
+fetch("/api/pets").then(res=>res.json()).then(data=>{
     console.log(data);
     data.forEach(pet=>{
         const newLi = document.createElement("li");
@@ -16,7 +16,7 @@ document.querySelector("#new-pet-form").addEventListener("submit",e=>{
         id:document.querySelector("#id").value,
     }
     console.log(myPet);
-    fetch("/pets",{
+    fetch("/api/pets",{
         method:"POST",
         body:JSON.stringify(myPet),
         headers:{
